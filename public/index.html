@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hoje é seu dia meu amor</title>
+    <meta
+      name="description"
+      content="Uma página especial de aniversário para Iris, com clima geladinho, pinguins e muito amor."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600;700;800&family=Nunito:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="aurora aurora-left"></div>
+    <div class="aurora aurora-right"></div>
+    <div class="snow" aria-hidden="true"></div>
+
+    <main class="page-shell">
+      <section class="screen is-active" data-screen="countdown">
+        <article class="message-card card countdown-card">
+          <p class="eyebrow">Contagem especial</p>
+          <h2>Ainda não é seu dia.</h2>
+          <img
+            class="message-gif final-gif"
+            src="https://media.giphy.com/media/OFz7vWJ5CudCDpGLG5/giphy.gif"
+            alt="Pingu esperando"
+          />
+          <div class="countdown-grid" aria-live="polite">
+            <div>
+              <strong id="countDays">00</strong>
+              <span>dias</span>
+            </div>
+            <div>
+              <strong id="countHours">00</strong>
+              <span>horas</span>
+            </div>
+            <div>
+              <strong id="countMinutes">00</strong>
+              <span>min</span>
+            </div>
+            <div>
+              <strong id="countSeconds">00</strong>
+              <span>seg</span>
+            </div>
+          </div>
+          <p class="lead countdown-lead">
+            Estou guardando essa surpresa para o momento certo.
+          </p>
+        </article>
+      </section>
+
+      <section class="screen" data-screen="intro">
+        <article class="hero card">
+          <div class="hero-copy">
+            <h1 id="heroTitle">Hoje é seu dia, meu amor</h1>
+            <p class="lead" id="heroLead">
+              Fiz esse site pra você, pra lembrar para sempre do seu aniversário.
+            </p>
+
+            <div class="music-card" id="musicCard">
+              <div class="music-cover"></div>
+              <div class="music-copy">
+                <p class="music-kicker">Nossa trilha</p>
+                <strong class="music-title" id="musicTitle">we fell in love in october</strong>
+                <span class="music-subtitle" id="musicSubtitle">girl in red</span>
+              </div>
+              <button class="music-play" id="musicToggle" type="button" aria-label="Tocar música">
+                ►
+              </button>
+            </div>
+
+            <audio
+              id="bgMusic"
+              preload="metadata"
+              src="./music/x_-_we_fell_in_love_in_october_(mp3.pm).mp3"
+            ></audio>
+
+            <div class="hero-actions">
+              <button class="button primary" type="button" data-next="mensagem-1">
+                Minha mensagem especial
+              </button>
+            </div>
+          </div>
+
+          <div class="hero-art" aria-label="GIF decorativo de pinguim">
+            <img
+              class="hero-gif"
+              src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExZ3Axc3pxdjJkZWp4dzB5aHd3eXg2aHh6OWZ0ZGFlNmJjZmx5eHZtdiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/P3HpubcAF2Mrt98OuP/giphy.gif"
+              alt="Pinguim fofo animado"
+            />
+          </div>
+        </article>
+      </section>
+
+      <section class="screen" data-screen="mensagem-1">
+        <article class="message-card card">
+          <p class="eyebrow">Uma carta para você</p>
+          <h2>Iris,</h2>
+          <p>hoje é o seu dia!</p>
+          <img
+            class="message-gif"
+            src="https://media.giphy.com/media/IglOWGsDF1sbQ2ROeK/giphy.gif"
+            alt="Pingu tocando trompete"
+          />
+          <div class="message-copy">
+            <p>
+              E eu fico pensando em como a vida tem dessas coisas bonitas:
+              colocar no nosso caminho alguém que consegue transformar momentos
+              simples em lembranças especiais.
+            </p>
+            <p>
+              Com você, até os dias mais comuns parecem ter algo diferente. Uma
+              conversa, uma risada, um silêncio juntos... tudo ganha mais
+              significado.
+            </p>
+          </div>
+          <div class="hero-actions message-actions">
+            <button class="button primary" type="button" data-next="mensagem-2">
+              Próxima parte
+            </button>
+          </div>
+        </article>
+      </section>
+
+      <section class="screen" data-screen="mensagem-2">
+        <article class="message-card card">
+          <img
+            class="message-gif"
+            src="https://media.giphy.com/media/Bwhgne7cBmdF01OXq9/giphy.gif"
+            alt="Pingu em clima de dia dos namorados"
+          />
+          <div class="message-copy">
+            <p>
+              Estar ao seu lado tem esse efeito curioso: o tempo parece mais
+              bonito... e ao mesmo tempo sempre passa rápido demais.
+            </p>
+            <p>
+              Hoje eu celebro o seu aniversário, mas também celebro a sorte de
+              poder compartilhar a vida com você.
+            </p>
+            <p>
+              Que este seja só mais um capítulo de muitos aniversários, muitas
+              histórias e muitos momentos lindos que ainda vamos construir
+              juntos.
+            </p>
+          </div>
+          <div class="hero-actions message-actions">
+            <button class="button primary" type="button" data-next="final">
+              Continuar
+            </button>
+          </div>
+        </article>
+      </section>
+
+      <section class="screen" data-screen="final">
+        <article class="message-card card final-card">
+          <p class="signature">
+            Feliz aniversário, meu amor. Você é a minha pessoa especial.
+          </p>
+          <img
+            class="message-gif final-gif"
+            src="https://media.giphy.com/media/2703rOzfyCS5kYM6Hd/giphy.gif"
+            alt="Pingu comemorando"
+          />
+          <div class="hero-actions message-actions final-actions">
+            <button class="button primary" type="button" data-next="gallery">
+              Continuar
+            </button>
+          </div>
+        </article>
+      </section>
+
+      <section class="screen" data-screen="gallery">
+        <article class="gallery-card card">
+          <p class="eyebrow">Nossas fotos</p>
+          <h2>Nossos momentos</h2>
+          <figure class="polaroid-frame story-frame" id="galleryFrame" tabindex="0">
+            <button class="story-zone story-zone-left" type="button" id="galleryPrev" aria-label="Foto anterior"></button>
+            <button class="story-zone story-zone-right" type="button" id="galleryNext" aria-label="Próxima foto"></button>
+            <img id="galleryImage" class="polaroid-image" src="" alt="Nossa foto" />
+            <figcaption class="polaroid-caption">
+              <span id="galleryCounter">1 / 1</span>
+            </figcaption>
+          </figure>
+          <div class="hero-actions final-actions">
+            <button class="button primary" type="button" data-next="beautiful">
+              Continuar
+            </button>
+          </div>
+        </article>
+      </section>
+
+      <section class="screen" data-screen="beautiful">
+        <article class="message-card card final-card">
+          <h2>Você é linda!</h2>
+          <img
+            class="message-gif final-gif"
+            src="https://media.giphy.com/media/SrWuKikT3frcM1u4Qg/giphy.gif"
+            alt="Pingu apaixonado"
+          />
+          <div class="hero-actions message-actions final-actions">
+            <button class="button primary" type="button" data-next="gift">
+              Continuar
+            </button>
+          </div>
+        </article>
+      </section>
+
+      <section class="screen" data-screen="gift">
+        <article class="message-card card final-card">
+          <h2>Este presente foi feito com muito carinho ❤️</h2>
+          <img
+            class="message-gif final-gif"
+            src="https://media.giphy.com/media/LH5Bet9YHsJaQar1TC/giphy.gif"
+            alt="Pingu feliz no dia dos namorados"
+          />
+        </article>
+      </section>
+    </main>
+
+    <script src="./config.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>

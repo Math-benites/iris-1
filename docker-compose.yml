@@ -1,0 +1,14 @@
+services:
+  iris-site:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: iris-site
+    env_file:
+      - .env
+    volumes:
+      - ./public:/app/public
+      - ./src:/app/src
+    ports:
+      - "8080:80"
+    restart: unless-stopped
